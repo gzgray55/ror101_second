@@ -1,0 +1,8 @@
+<h1>Tweets</h1>
+	<ul>
+		<% @tweets.each do |x| %>
+		<li>
+		<%= render "tweet", :tweet => x %>
+		</li>
+	<%end%>
+</ul>
